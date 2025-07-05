@@ -1,0 +1,5 @@
+package com.microtrace.service_b.config;
+
+public class AppConfig {
+
+}

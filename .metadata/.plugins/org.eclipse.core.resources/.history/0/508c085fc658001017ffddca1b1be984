@@ -1,0 +1,5 @@
+package com.microtrace.service_a.controller;
+
+public class ServiceAController {
+
+}
