@@ -1,0 +1,35 @@
+<h2>Trace Dashboard</h2>
+
+<input
+  type="text"
+  [(ngModel)]="filterText"
+  placeholder="Filter by operation or service name"
+  style="margin-bottom: 10px; padding: 5px; width: 300px"
+/>
+
+
+<table class="trace-table">
+  <thead>
+    <tr>
+      <th>Trace ID</th>
+      <th>Service</th>
+      <th>Operation</th>
+      <th>Start Time</th>
+      <th>Duration (ms)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let trace of filteredTraces">
+      <td>
+        <a [href]="'http://localhost:16686/trace/' + trace.traceId" target="_blank">
+          {{ trace.traceId }}
+        </a>
+      </td>
+      <td>{{ trace.serviceName }}</td>
+      <td>{{ trace.operationName }}</td>
+      <td>{{ trace.startTime }}</td>
+      <td>{{ trace.duration }}</td>
+    </tr>
+  </tbody>
+</table>
+

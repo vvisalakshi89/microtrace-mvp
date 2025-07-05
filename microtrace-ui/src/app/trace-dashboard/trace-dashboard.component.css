@@ -1,0 +1,23 @@
+.trace-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .trace-table th, .trace-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+  
+  .trace-table th {
+    background-color: #f4f4f4;
+    text-align: left;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
